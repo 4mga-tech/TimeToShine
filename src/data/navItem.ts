@@ -29,45 +29,35 @@ export const navItems: NavItem[] = [
 
 export const navItems2: NavItem[] = [
   {
-    name: "Home",
+    name: "Нүүр",
     link: "/",
   },
   {
-    name: "Blog",
-    link: "#",
-    subMenu: [
-      {
-        subName: "Blog List",
-        subLink: "blog",
-      },
-      {
-        subName: "Blog Detail",
-        subLink: "blog-detail",
-      },
-    ],
+    name: "Бүтээгдэхүүн",
+    link: "blog",
   },
   {
-    name: "Page",
+    name: "Хуудас",
     link: "#",
     subMenu: [
       {
-        subName: "About Us",
+        subName: "Бидний тухай",
         subLink: "about-us",
       },
       {
-        subName: "FAQs",
+        subName: "Түгээмэл асуултууд",
         subLink: "faq",
       },
       {
-        subName: "Pricing",
+        subName: "Үнэ",
         subLink: "pricing",
       },
       {
-        subName: "Use Case",
+        subName: "Хэрэглэх заавар",
         subLink: "use-case",
       },
       {
-        subName: "Use Case Detail",
+        subName: "хэрэглэх заавар дэлгэрэнгүй",
         subLink: "use-case-detail",
       },
       {
@@ -77,7 +67,7 @@ export const navItems2: NavItem[] = [
     ],
   },
   {
-    name: "Contact Us",
+    name: "Бидэнтэй холбогдох",
     link: "contact-us",
   },
 ];

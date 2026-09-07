@@ -10,7 +10,7 @@ export default function PageUseCase() {
   return (
     <>
       <Layout>
-        <PageTitle name="USE CASES" />
+        <PageTitle name="ХЭРЭГЛЭХ ЗААВАР" />
         <BenefitSectionV2 />
         <BreakSection />
         <PricingSectionV2 />

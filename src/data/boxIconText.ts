@@ -1,56 +1,65 @@
 export interface BoxIconTextProp {
-    image_icon: string;
-    title: string;
-    sub_title: string;
+  image_icon: string;
+  title: string;
+  sub_title: string;
 }
 
 export const boxIconTextProps: BoxIconTextProp[] = [
-    {
-        image_icon: "platform.svg",
-        title: "All-in-one platform",
-        sub_title: "No more juggling tools. Qore unifies content, design, code, and video.",
-    },
-    {
-        image_icon: "ai-core.svg",
-        title: "Multi-model AI core",
-        sub_title: "ChatGPT, Claude, Gemini — Qore picks the smartest engine for every task.",
-    },
-    {
-        image_icon: "control.svg",
-        title: "Prompt-level control",
-        sub_title: "Every feature is prompt-optimized, giving you control without overwhelm.",
-    },
-    {
-        image_icon: "speed.svg",
-        title: "Speed that scales",
-        sub_title: "From solo to teams, Qore delivers fast outputs — even under heavy loads.",
-    },
-    {
-        image_icon: "secure.svg",
-        title: "Secure by design",
-        sub_title: "Your content and code stay private. We never store sensitive data.",
-    },
-    {
-        image_icon: "evolving.svg",
-        title: "Always evolving",
-        sub_title: "Qore improves weekly with better prompts, UI, and models — for free.",
-    },
+  {
+    image_icon: "platform.svg",
+    title: "Цогц IT шийдэл",
+    sub_title:
+      "Хэд хэдэн байгууллагатай харилцах шаардлагагүй. TST веб, мобайл, дизайн, дэд бүтэц зэрэг бүх IT хэрэгцээг нэг дороос шийддэг.",
+  },
+  {
+    image_icon: "ai-core.svg",
+    title: "Мэргэжлийн баг, туршлагатай инженерүүд",
+    sub_title:
+      "Төрөл бүрийн технологи, платформ дээр ажилласан туршлагатай хөгжүүлэгчид таны төслийг хамгийн тохиромжтой шийдлээр хэрэгжүүлдэг.",
+  },
+  {
+    image_icon: "control.svg",
+    title: "Таны хэрэгцээнд тохирсон шийдэл",
+    sub_title:
+      "Бид загвар шийдэл биш, таны бизнесийн онцлогт тулгуурласан, тусгайлан боловсруулсан шийдлийг санал болгодог.",
+  },
+  {
+    image_icon: "speed.svg",
+    title: "Цаг хугацаанд нийцсэн хурд",
+    sub_title:
+      "Жижиг эсвэл том төсөл, ганц хүн эсвэл баг — TST хугацаандаа, чанартай үр дүнг хүргэдэг.",
+  },
+  {
+    image_icon: "secure.svg",
+    title: "Аюулгүй байдал эхний ээлжинд",
+    sub_title:
+      "Таны мэдээлэл, эх код бүрэн нууцлагдсан хэвээр байна. Бид мэдрэмтгий өгөгдлийг хадгалдаггүй.",
+  },
+  {
+    image_icon: "evolving.svg",
+    title: "Байнга хөгжиж буй технологи",
+    sub_title:
+      "Бид шинэ технологи, хэрэгслүүдийг тогтмол судалж, туршлагаа сайжруулан, таны төслүүдэд хамгийн сүүлийн үеийн шийдлийг санал болгодог.",
+  },
 ];
 
 export const boxIconTextProps2: BoxIconTextProp[] = [
-    {
-        image_icon: "setting.svg",
-        title: "Request Demo",
-        sub_title: "Qore improves weekly with better prompts, UI, and models — for free.",
-    },
-    {
-        image_icon: "support.svg",
-        title: "Online support",
-        sub_title: "Need help? Our support team is available to answer of 24x7.",
-    },
-    {
-        image_icon: "partner.svg",
-        title: "Partnership",
-        sub_title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis mauris nec.",
-    },
+  {
+    image_icon: "setting.svg",
+    title: "Демо хүсэх",
+    sub_title:
+      "Манай багтай холбогдож, TST-ийн шийдлүүдийг өөрийн бизнест хэрхэн тохируулан ашиглахыг үнэ төлбөргүй танилцуулга үзээрэй.",
+  },
+  {
+    image_icon: "support.svg",
+    title: "Онлайн дэмжлэг",
+    sub_title:
+      "Тусламж хэрэгтэй байна уу? Манай дэмжлэгийн баг 24/7 цагийн турш танд хариу өгөхөд бэлэн байна.",
+  },
+  {
+    image_icon: "partner.svg",
+    title: "Хамтын ажиллагаа",
+    sub_title:
+      "Бизнесийн түнш болох, хамтарсан төсөл хэрэгжүүлэх боломжийн талаар манай багтай холбогдоорой.",
+  },
 ];

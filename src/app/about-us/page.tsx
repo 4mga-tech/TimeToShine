@@ -11,7 +11,7 @@ export default function PageAboutUs() {
   return (
     <>
       <Layout>
-        <PageTitle name="ABOUT US" />
+        <PageTitle name="БИДНИЙ ТУХАЙ" />
         <HeroAbout />
         <BreakSection />
         <BenefitSectionV2 />

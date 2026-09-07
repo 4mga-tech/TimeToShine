@@ -5,14 +5,14 @@ import GetSection from "@/src/components/section/GetSection";
 import PageTitle from "@/src/components/section/PageTitle";
 
 export default function PageFaq() {
-    return (
-        <>
-            <Layout>
-                <PageTitle name="FAQS" />
-                <FaqSectionV2 />
-                <BreakSection />
-                <GetSection />
-            </Layout>
-        </>
-    );
+  return (
+    <>
+      <Layout>
+        <PageTitle name="ТҮГЭЭМЭЛ АСУУЛТУУД" />
+        <FaqSectionV2 />
+        <BreakSection />
+        <GetSection />
+      </Layout>
+    </>
+  );
 }

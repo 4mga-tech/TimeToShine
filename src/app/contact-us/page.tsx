@@ -10,7 +10,7 @@ export default function PageContact() {
   return (
     <>
       <Layout>
-        <PageTitle name="CONTACT" />
+        <PageTitle name="БИДЭНТЭЙ ХОЛБОГДОХ" />
         <ContactSection />
         <BreakSection />
         <section className="section-map flat-spacing-3">

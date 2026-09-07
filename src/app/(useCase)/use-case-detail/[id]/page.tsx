@@ -11,7 +11,7 @@ export default function PageUseCaseDetail() {
   return (
     <>
       <Layout>
-        <PageTitle name="USE CASE" />
+        <PageTitle name="БИДЭНТЭЙ ХОЛБОГДОХ" />
         <UseCaseDetail />
         <BreakSection />
         <LastestCaseSection />
