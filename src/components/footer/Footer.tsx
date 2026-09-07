@@ -80,30 +80,34 @@ export function FooterInnerLink() {
         </div>
 
         <FooterColumn
-          title="Product"
+          title="Бүтээгдэхүүн"
           className="mx-auto m-sm-0"
           links={[
-            { label: "Features", href: "#" },
-            { label: "Benefits", href: "#" },
-            { label: "How to use", href: "#" },
-            { label: "Pricing", href: "#" },
+            { label: "Онцлог", href: "#" },
+            { label: "Үр дүн", href: "#" },
+            { label: "Хэрхэн ашиглах", href: "#" },
+            { label: "Бүтээгдэхүүн", href: "#" },
           ]}
         />
 
         <FooterColumn
-          title="Legals"
+          title="Бодлого"
           links={[
-            { label: "Privacy Policy", href: "#" },
-            { label: "Terms & Conditions", href: "#" },
+            { label: "Нууцлалын бодлого", href: "#" },
+            { label: "Үйлчилгээний нөхцөл", href: "#" },
           ]}
         />
 
         <FooterColumn
-          title="Social"
+          title="Сошиал медиа"
           className="mx-auto m-sm-0"
           links={[
             { label: "Twitter (X)", href: "#" },
-            { label: "Github", href: "#" },
+            {
+              label: "Facebook",
+              href: "https://www.facebook.com/share/1LNnFvVguy/?mibextid=wwXIfr",
+              target: "_blank",
+            },
             { label: "LinkedIn", href: "#" },
           ]}
         />

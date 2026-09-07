@@ -1,31 +1,245 @@
 export interface ProductSpecification {
-    label: string;
-    value: string;
+  label: string;
+  value: string;
 }
 
 export interface Product {
-    id: number;
-    name: string;
-    category: string;
-    image: string;
-    price: string;
-    description: string;
-    details: string;
-    features: string[];
-    specifications: ProductSpecification[];
+  id: number;
+  name: string;
+  category: string;
+  image: string;
+  price: string;
+  description: string;
+  details: string;
+  features: string[];
+  specifications: ProductSpecification[];
 }
 
 // Local demo assets keep the catalog self-contained. Replace `image` values with
 // product CDN/API URLs when inventory data is connected.
 export const products: Product[] = [
-    { id: 1, name: "Hikvision 2MP Dome Camera", category: "Dome Cameras", image: "/assets/images/blog/blog-1.jpg", price: "$59.00", description: "Compact indoor dome camera with dependable full HD monitoring.", details: "A discreet fixed-lens camera for homes, offices, and retail counters where clear everyday coverage matters.", features: ["Full HD live view", "Built-in infrared illumination", "Compact vandal-resistant housing"], specifications: [{ label: "Resolution", value: "2MP / 1080p" }, { label: "Lens", value: "2.8mm" }, { label: "Night Vision", value: "Up to 30m" }, { label: "Connectivity", value: "IP / PoE" }, { label: "Weather Resistance", value: "Indoor" }] },
-    { id: 2, name: "Hikvision 4MP Bullet Camera", category: "Bullet Cameras", image: "/assets/images/blog/blog-2.jpg", price: "$89.00", description: "Weather-ready bullet camera with crisp 4MP detail for outdoor areas.", details: "Designed for entrances, driveways, and perimeter coverage, with a focused lens and durable outdoor enclosure.", features: ["4MP high-detail video", "Smart motion detection", "Metal outdoor housing"], specifications: [{ label: "Resolution", value: "4MP" }, { label: "Lens", value: "3.6mm" }, { label: "Night Vision", value: "Up to 40m" }, { label: "Connectivity", value: "IP / PoE" }, { label: "Weather Resistance", value: "IP67" }] },
-    { id: 3, name: "Hikvision 5MP ColorVu Camera", category: "Color Night Vision", image: "/assets/images/blog/blog-3.jpg", price: "$119.00", description: "Color night vision camera for vivid, low-light perimeter protection.", details: "ColorVu imaging captures useful colour detail after dark, making it a strong choice for storefronts and parking areas.", features: ["Full-colour low-light video", "Integrated white light", "Human and vehicle detection"], specifications: [{ label: "Resolution", value: "5MP" }, { label: "Lens", value: "2.8mm" }, { label: "Night Vision", value: "Up to 30m" }, { label: "Connectivity", value: "IP / PoE" }, { label: "Weather Resistance", value: "IP67" }] },
-    { id: 4, name: "Dahua 2MP Dome Camera", category: "Dome Cameras", image: "/assets/images/blog/blog-4.jpg", price: "$55.00", description: "Reliable 1080p dome camera built for clear indoor surveillance.", details: "An affordable, easy-to-position option for reception areas, corridors, and small business interiors.", features: ["1080p monitoring", "Wide viewing angle", "Simple PoE installation"], specifications: [{ label: "Resolution", value: "2MP / 1080p" }, { label: "Lens", value: "2.8mm" }, { label: "Night Vision", value: "Up to 20m" }, { label: "Connectivity", value: "IP / PoE" }, { label: "Weather Resistance", value: "Indoor" }] },
-    { id: 5, name: "Dahua 4MP Bullet Camera", category: "Bullet Cameras", image: "/assets/images/blog/blog-5.jpg", price: "$92.00", description: "High-resolution outdoor bullet camera with intelligent event alerts.", details: "A versatile camera for exterior monitoring with strong image detail and protection from dust and rain.", features: ["4MP image sensor", "IR cut filter", "Mobile alert support"], specifications: [{ label: "Resolution", value: "4MP" }, { label: "Lens", value: "3.6mm" }, { label: "Night Vision", value: "Up to 50m" }, { label: "Connectivity", value: "IP / PoE" }, { label: "Weather Resistance", value: "IP67" }] },
-    { id: 6, name: "Dahua PTZ Camera", category: "PTZ Cameras", image: "/assets/images/blog/recent-4.jpg", price: "$299.00", description: "Motorized pan, tilt, and zoom coverage for large active spaces.", details: "Monitor expansive sites with remote directional control, optical zoom, and automatic tracking support.", features: ["360° continuous pan", "Optical zoom", "Preset patrol routes"], specifications: [{ label: "Resolution", value: "4MP" }, { label: "Lens", value: "4.8–120mm" }, { label: "Night Vision", value: "Up to 100m" }, { label: "Connectivity", value: "IP / PoE+" }, { label: "Weather Resistance", value: "IP66" }] },
-    { id: 7, name: "Hikvision 8MP IP Camera", category: "IP Cameras", image: "/assets/images/blog/recent-5.jpg", price: "$159.00", description: "Ultra HD IP camera for precise monitoring and evidence capture.", details: "Capture fine details at 4K resolution in demanding locations such as gates, warehouses, and loading bays.", features: ["8MP Ultra HD video", "H.265+ compression", "MicroSD edge storage"], specifications: [{ label: "Resolution", value: "8MP / 4K" }, { label: "Lens", value: "2.8mm" }, { label: "Night Vision", value: "Up to 30m" }, { label: "Connectivity", value: "IP / PoE" }, { label: "Weather Resistance", value: "IP67" }] },
-    { id: 8, name: "Dahua 5MP Night Vision Camera", category: "Night Vision", image: "/assets/images/blog/recent-1.jpg", price: "$109.00", description: "5MP camera with extended infrared reach for after-dark coverage.", details: "A dependable night monitoring solution engineered to retain detail in low-light industrial and residential settings.", features: ["5MP sensor", "Enhanced infrared LEDs", "Low-light noise reduction"], specifications: [{ label: "Resolution", value: "5MP" }, { label: "Lens", value: "3.6mm" }, { label: "Night Vision", value: "Up to 60m" }, { label: "Connectivity", value: "IP / PoE" }, { label: "Weather Resistance", value: "IP67" }] },
-    { id: 9, name: "Hikvision WiFi Camera", category: "Wireless Cameras", image: "/assets/images/blog/recent-2.jpg", price: "$69.00", description: "Flexible wireless monitoring for simple home and small-office setup.", details: "Connect quickly through Wi-Fi and check in from a mobile device, with local storage support for everyday peace of mind.", features: ["Dual-band Wi-Fi", "Two-way audio", "App-based viewing"], specifications: [{ label: "Resolution", value: "2MP / 1080p" }, { label: "Lens", value: "4mm" }, { label: "Night Vision", value: "Up to 10m" }, { label: "Connectivity", value: "Wi-Fi" }, { label: "Weather Resistance", value: "Indoor" }] },
-    { id: 10, name: "Outdoor Security Camera", category: "Outdoor Cameras", image: "/assets/images/blog/recent-3.jpg", price: "$79.00", description: "All-weather security camera for practical, around-the-clock protection.", details: "A robust outdoor camera that brings clear coverage to homes and small commercial properties in changing weather.", features: ["Weather-sealed enclosure", "Motion-activated alerts", "Wide-angle coverage"], specifications: [{ label: "Resolution", value: "3MP" }, { label: "Lens", value: "2.8mm" }, { label: "Night Vision", value: "Up to 30m" }, { label: "Connectivity", value: "IP / PoE" }, { label: "Weather Resistance", value: "IP66" }] },
+  {
+    id: 1,
+    name: "Hikvision 2MP Дом Камер",
+    category: "Дом камерууд",
+    image: "/assets/images/blog/hikvision.jpg",
+    price: "$59.00",
+    description:
+      "Найдвартай Full HD дүрс бүхий, дотор орчинд зориулсан компакт дом камер.",
+    details:
+      "Гэр, оффис, дэлгүүрийн касс зэрэг өдөр тутмын хяналт чухал газруудад тохиромжтой, анзаарагдахгүй суурилуулах боломжтой тогтмол линзтэй камер.",
+    features: [
+      "Full HD шууд дүрс",
+      "Суурилуулсан хэт улаан туяаны гэрэлтүүлэг",
+      "Гэмтэлд тэсвэртэй компакт бүрхүүл",
+    ],
+    specifications: [
+      { label: "Нарийвчлал", value: "2MP / 1080p" },
+      { label: "Линз", value: "2.8мм" },
+      { label: "Шөнийн дүрс", value: "30м хүртэл" },
+      { label: "Холболт", value: "IP / PoE" },
+      { label: "Цаг агаарын тэсвэр", value: "Дотор орчин" },
+    ],
+  },
+  {
+    id: 2,
+    name: "Hikvision 4MP Пуужин хэлбэрийн камер",
+    category: "Пуужин хэлбэрийн камерууд",
+    image: "/assets/images/blog/hikvision2.jpg",
+    price: "$89.00",
+    description:
+      "Гадна орчинд зориулсан, 4MP тодорхой дүрс бүхий цаг агаарт тэсвэртэй камер.",
+    details:
+      "Орох хаалга, машины зам, хамгаалалтын хилийн шугамд зориулагдсан бөгөөд төвлөрсөн линз, бат бөх гадаад бүрхүүлтэй.",
+    features: [
+      "4MP өндөр нарийвчлалтай дүрс",
+      "Ухаалаг хөдөлгөөн илрүүлэлт",
+      "Металл гадна бүрхүүл",
+    ],
+    specifications: [
+      { label: "Нарийвчлал", value: "4MP" },
+      { label: "Линз", value: "3.6мм" },
+      { label: "Шөнийн дүрс", value: "40м хүртэл" },
+      { label: "Холболт", value: "IP / PoE" },
+      { label: "Цаг агаарын тэсвэр", value: "IP67" },
+    ],
+  },
+  {
+    id: 3,
+    name: "Hikvision 5MP ColorVu Камер",
+    category: "Өнгөт шөнийн дүрс",
+    image: "/assets/images/blog/hikvision3.jpg",
+    price: "$119.00",
+    description:
+      "Бага гэрэлтэй орчинд тод, өнгөт дүрс өгдөг, хилийн хамгаалалтад зориулсан камер.",
+    details:
+      "ColorVu технологи нь шөнийн цагт ч ашигтай өнгөт дүрс авдаг тул дэлгүүр, зогсоолын талбайд тохиромжтой шийдэл юм.",
+    features: [
+      "Бага гэрэлд бүрэн өнгөт дүрс",
+      "Суурилуулсан цагаан гэрэл",
+      "Хүн болон тээврийн хэрэгсэл илрүүлэх",
+    ],
+    specifications: [
+      { label: "Нарийвчлал", value: "5MP" },
+      { label: "Линз", value: "2.8мм" },
+      { label: "Шөнийн дүрс", value: "30м хүртэл" },
+      { label: "Холболт", value: "IP / PoE" },
+      { label: "Цаг агаарын тэсвэр", value: "IP67" },
+    ],
+  },
+  {
+    id: 4,
+    name: "Dahua 2MP Дом Камер",
+    category: "Дом камерууд",
+    image: "/assets/images/blog/hikvision4.jpg",
+    price: "$55.00",
+    description:
+      "Дотор орчинд тодорхой хяналт хийхэд зориулсан, найдвартай 1080p дом камер.",
+    details:
+      "Хүлээн авах танхим, коридор, жижиг оффисын дотор орчинд байрлуулахад хялбар, хямд өртөгтэй шийдэл.",
+    features: [
+      "1080p дүрс хяналт",
+      "Өргөн харах өнцөг",
+      "PoE-ээр хялбар суурилуулалт",
+    ],
+    specifications: [
+      { label: "Нарийвчлал", value: "2MP / 1080p" },
+      { label: "Линз", value: "2.8мм" },
+      { label: "Шөнийн дүрс", value: "20м хүртэл" },
+      { label: "Холболт", value: "IP / PoE" },
+      { label: "Цаг агаарын тэсвэр", value: "Дотор орчин" },
+    ],
+  },
+  {
+    id: 5,
+    name: "Dahua 4MP Пуужин хэлбэрийн камер",
+    category: "Пуужин хэлбэрийн камерууд",
+    image: "/assets/images/blog/hikvision5.jpg",
+    price: "$92.00",
+    description:
+      "Ухаалаг мэдэгдэл бүхий, өндөр нарийвчлалтай гадна орчны камер.",
+    details:
+      "Гадна орчны хяналтад зориулсан, тод дүрс, тоос болон бороонд тэсвэртэй олон талт камер.",
+    features: [
+      "4MP дүрс мэдрэгч",
+      "IR шүүлтүүр",
+      "Гар утсаар мэдэгдэл авах боломж",
+    ],
+    specifications: [
+      { label: "Нарийвчлал", value: "4MP" },
+      { label: "Линз", value: "3.6мм" },
+      { label: "Шөнийн дүрс", value: "50м хүртэл" },
+      { label: "Холболт", value: "IP / PoE" },
+      { label: "Цаг агаарын тэсвэр", value: "IP67" },
+    ],
+  },
+  {
+    id: 6,
+    name: "Dahua PTZ Камер",
+    category: "PTZ камерууд",
+    image: "/assets/images/blog/hikvision5.jpg",
+    price: "$299.00",
+    description:
+      "Том, идэвхтэй талбайд зориулсан эргэх, налах, томруулах моторт хяналт.",
+    details:
+      "Уг зайнаас чиглэл удирдах, оптик томруулах, автомат хяналтын дэмжлэгтэйгээр өргөн уудам талбайг хянах боломжтой.",
+    features: [
+      "360° тасралтгүй эргэлт",
+      "Оптик томруулга",
+      "Урьдчилан тохируулсан эргэлтийн маршрут",
+    ],
+    specifications: [
+      { label: "Нарийвчлал", value: "4MP" },
+      { label: "Линз", value: "4.8–120мм" },
+      { label: "Шөнийн дүрс", value: "100м хүртэл" },
+      { label: "Холболт", value: "IP / PoE+" },
+      { label: "Цаг агаарын тэсвэр", value: "IP66" },
+    ],
+  },
+  {
+    id: 7,
+    name: "Hikvision 8MP IP Камер",
+    category: "IP камерууд",
+    image: "/assets/images/blog/hikvision4.jpg",
+    price: "$159.00",
+    description: "Нарийн хяналт, нотолгоо бичихэд зориулсан Ultra HD IP камер.",
+    details:
+      "Хаалга, агуулах, ачилтын талбай зэрэг нарийвчлал шаардсан газруудад 4K нарийвчлалтай дүрс авдаг.",
+    features: ["8MP Ultra HD дүрс", "H.265+ шахалт", "MicroSD дотоод санах ой"],
+    specifications: [
+      { label: "Нарийвчлал", value: "8MP / 4K" },
+      { label: "Линз", value: "2.8мм" },
+      { label: "Шөнийн дүрс", value: "30м хүртэл" },
+      { label: "Холболт", value: "IP / PoE" },
+      { label: "Цаг агаарын тэсвэр", value: "IP67" },
+    ],
+  },
+  {
+    id: 8,
+    name: "Dahua 5MP Шөнийн дүрсний камер",
+    category: "Шөнийн дүрс",
+    image: "/assets/images/blog/hikvision3.jpg",
+    price: "$109.00",
+    description: "Шөнийн цагт хол зайнаас хянах чадвартай 5MP камер.",
+    details:
+      "Аж үйлдвэр болон орон сууцны бага гэрэлтэй орчинд дүрсний нарийвчлалыг хадгалахад зориулагдсан найдвартай шийдэл.",
+    features: [
+      "5MP мэдрэгч",
+      "Сайжруулсан хэт улаан туяа LED",
+      "Бага гэрэлд шуугиан багасгах технологи",
+    ],
+    specifications: [
+      { label: "Нарийвчлал", value: "5MP" },
+      { label: "Линз", value: "3.6мм" },
+      { label: "Шөнийн дүрс", value: "60м хүртэл" },
+      { label: "Холболт", value: "IP / PoE" },
+      { label: "Цаг агаарын тэсвэр", value: "IP67" },
+    ],
+  },
+  {
+    id: 9,
+    name: "Hikvision WiFi Камер",
+    category: "Утасгүй камерууд",
+    image: "/assets/images/blog/hikvision2.jpg",
+    price: "$69.00",
+    description:
+      "Гэр болон жижиг оффист хялбар суурилуулах уян хатан утасгүй хяналтын камер.",
+    details:
+      "Wi-Fi-ээр түргэн холбогдож, гар утаснаас хянах боломжтой, дотоод санах ойн дэмжлэгтэй өдөр тутмын аюулгүй байдлын шийдэл.",
+    features: [
+      "Хос давтамжийн Wi-Fi",
+      "Хоёр талын дуу холбоо",
+      "Апп-аар хянах боломж",
+    ],
+    specifications: [
+      { label: "Нарийвчлал", value: "2MP / 1080p" },
+      { label: "Линз", value: "4мм" },
+      { label: "Шөнийн дүрс", value: "10м хүртэл" },
+      { label: "Холболт", value: "Wi-Fi" },
+      { label: "Цаг агаарын тэсвэр", value: "Дотор орчин" },
+    ],
+  },
+  {
+    id: 10,
+    name: "Гадна орчны хамгаалалтын камер",
+    category: "Гадна орчны камерууд",
+    image: "/assets/images/blog/hikvision.jpg",
+    price: "$79.00",
+    description:
+      "Аливаа цаг агаарт тохиромжтой, өдөр шөнөгүй хамгаалалт хийдэг камер.",
+    details:
+      "Цаг агаарын нөхцөл өөрчлөгддөг орчинд гэр, жижиг бизнесийн байранд тодорхой хяналт хийдэг бат бөх гадна камер.",
+    features: [
+      "Цаг агаарт тэсвэртэй бүрхүүл",
+      "Хөдөлгөөнөөр идэвхжих мэдэгдэл",
+      "Өргөн өнцгийн хяналт",
+    ],
+    specifications: [
+      { label: "Нарийвчлал", value: "3MP" },
+      { label: "Линз", value: "2.8мм" },
+      { label: "Шөнийн дүрс", value: "30м хүртэл" },
+      { label: "Холболт", value: "IP / PoE" },
+      { label: "Цаг агаарын тэсвэр", value: "IP66" },
+    ],
+  },
 ];

@@ -20,9 +20,9 @@ export default function SectHeaderClient({ value, label }: Props) {
         </span>{" "}
         / 07 ]
       </div>
-      <p className="s-label">
+      {/* <p className="s-label">
         [ <span className="text-white hacker-text_transform">{label}</span> ]
-      </p>
+      </p> */}
     </div>
   );
 }
