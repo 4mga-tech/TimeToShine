@@ -1,0 +1,255 @@
+@use "../abstracts/index" as *;
+.section-contracted-it {
+  position: relative;
+  overflow: hidden;
+}
+.section-contracted-it::before {
+  content: "";
+  position: absolute;
+  width: min(65vw, 900px);
+  height: 440px;
+  top: 2%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: radial-gradient(ellipse, rgba(27, 78, 245, 0.2), transparent 68%);
+  pointer-events: none;
+}
+.section-contracted-it .container {
+  position: relative;
+}
+.contracted-it__intro {
+  max-width: 780px;
+  margin: 0 auto 84px;
+  text-align: center;
+}
+.contracted-it__intro h1 {
+  margin: 12px 0 20px;
+  color: var(--white);
+}
+.contracted-it__intro > p:last-child {
+  max-width: 680px;
+  margin: auto;
+  color: var(--text-6);
+}
+.contracted-it__section-heading {
+  margin-bottom: 28px;
+}
+.contracted-it__section-heading h2 {
+  margin-top: 10px;
+  color: var(--white);
+}
+.contracted-it__section-heading--center {
+  text-align: center;
+}
+.contracted-it__responsibilities,
+.contracted-it__models,
+.contracted-it__plans {
+  margin-top: 84px;
+}
+.contracted-it__intro {
+  padding: clamp(28px, 5vw, 64px);
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  background: linear-gradient(
+    130deg,
+    rgba(27, 78, 245, 0.18),
+    rgba(20, 20, 21, 0.7) 60%
+  );
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.06);
+}
+.contracted-it__intro::after {
+  content: "";
+  display: block;
+  width: 48px;
+  height: 2px;
+  margin: 28px auto 0;
+  background: var(--text-5);
+  box-shadow: 0 0 16px var(--text-5);
+}
+.contracted-it__responsibility-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+.contracted-it__responsibility-card:first-child {
+  grid-column: span 2;
+  background: linear-gradient(
+    135deg,
+    rgba(27, 78, 245, 0.22),
+    rgba(20, 20, 21, 0.9)
+  );
+}
+.contracted-it__responsibility-card:first-child h3 {
+  font-size: clamp(20px, 2vw, 28px);
+  line-height: 1.25;
+}
+.contracted-it__model-card {
+  position: relative;
+  overflow: hidden;
+}
+.contracted-it__model-card::after {
+  content: "";
+  position: absolute;
+  inset: auto -20px -30px auto;
+  width: 70px;
+  height: 70px;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+}
+.contracted-it__plan {
+  border-radius: 20px;
+}
+.contracted-it__plan > p:first-of-type {
+  color: var(--text-6);
+  min-height: 72px;
+}
+.contracted-it__responsibility-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+}
+.contracted-it__responsibility-card,
+.contracted-it__model-card,
+.contracted-it__plan {
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: rgba(20, 20, 21, 0.82);
+}
+.contracted-it__responsibility-card {
+  min-height: 160px;
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: 0.3s;
+}
+.contracted-it__responsibility-card:hover,
+.contracted-it__model-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--text-5);
+}
+.contracted-it__responsibility-card span,
+.contracted-it__model-card > span {
+  color: var(--text-5);
+}
+.contracted-it__responsibility-card h3,
+.contracted-it__model-card h3,
+.contracted-it__plan h3 {
+  color: var(--white);
+}
+.contracted-it__model-grid,
+.contracted-it__plan-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+.contracted-it__model-card {
+  padding: 28px;
+}
+.contracted-it__model-card > span {
+  display: block;
+  margin-bottom: 28px;
+  font-size: 22px;
+}
+.contracted-it__model-card h3 {
+  margin-bottom: 12px;
+}
+.contracted-it__plan {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 32px 28px;
+}
+.contracted-it__plan--recommended {
+  border-color: var(--text-5);
+  box-shadow: 0 0 40px rgba(27, 78, 245, 0.18);
+  background: linear-gradient(
+    160deg,
+    rgba(27, 78, 245, 0.18),
+    rgba(20, 20, 21, 0.95) 42%
+  );
+}
+.contracted-it__badge {
+  position: absolute;
+  top: -11px;
+  right: 22px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  color: var(--white);
+  background: var(--primary);
+}
+.contracted-it__plan h3 {
+  margin-bottom: 14px;
+}
+.contracted-it__plan .br-line {
+  margin: 24px 0;
+}
+.contracted-it__plan ul {
+  display: grid;
+  gap: 12px;
+  margin-bottom: 30px;
+}
+.contracted-it__plan li {
+  display: flex;
+  gap: 10px;
+}
+.contracted-it__plan li::before {
+  content: "✓";
+  color: var(--text-5);
+}
+.contracted-it__plan .tf-btn {
+  width: 100%;
+  justify-content: center;
+  margin-top: auto;
+}
+.contracted-it__cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  margin-top: 84px;
+  padding: 32px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: #ffffff0f;
+}
+.contracted-it__cta h2 {
+  margin-top: 8px;
+  color: var(--white);
+}
+@media (max-width: 991px) {
+  .contracted-it__responsibility-grid,
+  .contracted-it__model-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .contracted-it__plan-grid {
+    grid-template-columns: 1fr;
+    max-width: 600px;
+    margin: auto;
+  }
+}
+@media (max-width: 767px) {
+  .contracted-it__intro {
+    margin-bottom: 56px;
+  }
+  .contracted-it__responsibilities,
+  .contracted-it__models,
+  .contracted-it__plans {
+    margin-top: 56px;
+  }
+  .contracted-it__responsibility-grid,
+  .contracted-it__model-grid {
+    grid-template-columns: 1fr;
+  }
+  .contracted-it__responsibility-card,
+  .contracted-it__model-card,
+  .contracted-it__plan {
+    padding: 22px 20px;
+  }
+  .contracted-it__cta {
+    display: grid;
+    margin-top: 56px;
+    padding: 24px 20px;
+  }
+  .contracted-it__cta .tf-btn {
+    justify-content: center;
+  }
+}

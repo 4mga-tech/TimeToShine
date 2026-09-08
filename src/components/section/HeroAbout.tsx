@@ -26,15 +26,14 @@ export default function HeroAbout() {
         <div className="container position-relative z-5">
           <div className="row">
             <div className="col-lg-10 mx-auto">
-              <div className="sect-title wow fadeInUp">
-                <h2 className="s-title font-3 text-linear">
+              <div className="sect-title hero-about__intro wow fadeInUp">
+                <h2 className="s-title font-3">
                   Танай итгэлт түнш <br />
                   “Ти Эс Ти таусэнт технологи” ХХК
                 </h2>
                 <p className="s-sub_title">
-                  Мэдээллийн технологи, инженерийн дэвшилтэт шийдлийг нэг дороос
-                  хүргэх зорилготойгоор <br className="d-none d-md-block" />{" "}
-                  дараах үндсэн чиглэлүүдээр үйлчилгээ үзүүлэн ажиллаж байна.
+                  Мэдээллийн технологи, инженерийн найдвартай шийдлийг таны
+                  хэрэгцээнд нийцүүлэн хүргэнэ.
                 </p>
               </div>
               <div className="image px-16 px-lg-0">
@@ -72,35 +71,35 @@ export default function HeroAbout() {
                     loading="lazy"
                     width={41}
                     height={16}
-                    src="/assets/images/brand/brand-5.png"
+                    src="/assets/images/brand/brand_1.png"
                     alt="Brand"
                   />
                   <Image
                     loading="lazy"
                     width={81}
                     height={16}
-                    src="/assets/images/brand/brand-2.png"
+                    src="/assets/images/brand/brand_2.png"
                     alt="Brand"
                   />
                   <Image
                     loading="lazy"
                     width={70}
                     height={16}
-                    src="/assets/images/brand/brand-3.png"
+                    src="/assets/images/brand/brand_1.png"
                     alt="Brand"
                   />
                   <Image
                     loading="lazy"
                     width={74}
                     height={16}
-                    src="/assets/images/brand/brand-6.png"
+                    src="/assets/images/brand/brand_2.png"
                     alt="Brand"
                   />
                 </div>
               </div>
             </div>
             <div className="col-lg-5 offset-lg-1">
-              <ScrollColorText className="h4 font-3 px-16 px-lg-0">
+              <ScrollColorText className="h4 font-3 px-16 px-lg-0 hero-about__statement">
                 Хувь хүн болон аж ахуйн нэгж, албан байгууллагын үйл ажиллагааны
                 хэрэгцээ шаардлагад нийцсэн программ хангамж, тоног төхөөрөмжийн
                 нийлүүлэлт, угсралт, суурилуулалт, тохиргоо, техникийн дэмжлэг,

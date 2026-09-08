@@ -2,6 +2,7 @@
 
 import { Product, products } from "@/src/data/products";
 import Image from "next/image";
+import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
 
 function matchesQuery(product: Product, query: string) {
@@ -57,9 +58,6 @@ export default function ProductCatalog() {
             <div>
               <p className="text-body-3">Хяналтын камер</p>
               <h2 className="font-3 h3 text-linear">Бүтээгдэхүүний төрөл</h2>
-              {/* <p className="product-catalog__intro">
-                Professional surveillance equipment for every space.
-              </p> */}
             </div>
             <label className="product-search" htmlFor="product-search">
               <i className="icon icon-MagnifyingGlass" aria-hidden="true"></i>
@@ -73,40 +71,50 @@ export default function ProductCatalog() {
             </label>
           </div>
           {filteredProducts.length ? (
-            <div className="product-grid">
-              {filteredProducts.map((product) => (
-                <button
-                  className="product-card hover-img"
-                  type="button"
-                  key={product.id}
-                  onClick={() => setSelectedProduct(product)}
-                  aria-label={`View details for ${product.name}`}
+            <>
+              <div className="product-grid">
+                {filteredProducts.map((product) => (
+                  <button
+                    className="product-card hover-img"
+                    type="button"
+                    key={product.id}
+                    onClick={() => setSelectedProduct(product)}
+                    aria-label={`View details for ${product.name}`}
+                  >
+                    <span className="product-card__image img-style">
+                      <Image
+                        src={product.image}
+                        alt={product.name}
+                        fill
+                        sizes="(max-width: 575px) 100vw, (max-width: 767px) 50vw, (max-width: 1199px) 33vw, 20vw"
+                      />
+                    </span>
+                    <span className="product-card__content">
+                      <span className="product-card__category text-body-3">
+                        {product.category}
+                      </span>
+                      <span className="product-card__name font-3 h5">
+                        {product.name}
+                      </span>
+                      <span className="product-card__description">
+                        {product.description}
+                      </span>
+                      <span className="product-card__price text-body-1">
+                        {product.price}
+                      </span>
+                    </span>
+                  </button>
+                ))}
+              </div>
+              {/* <div className="product-catalog__action">
+                <Link
+                  href="/use-case-detail"
+                  className="tf-btn text-body-3 style-2 animate-btn animate-dark"
                 >
-                  <span className="product-card__image img-style">
-                    <Image
-                      src={product.image}
-                      alt={product.name}
-                      fill
-                      sizes="(max-width: 575px) 100vw, (max-width: 767px) 50vw, (max-width: 1199px) 33vw, 20vw"
-                    />
-                  </span>
-                  <span className="product-card__content">
-                    <span className="product-card__category text-body-3">
-                      {product.category}
-                    </span>
-                    <span className="product-card__name font-3 h5">
-                      {product.name}
-                    </span>
-                    <span className="product-card__description">
-                      {product.description}
-                    </span>
-                    <span className="product-card__price text-body-1">
-                      {product.price}
-                    </span>
-                  </span>
-                </button>
-              ))}
-            </div>
+                  Бүгдийг үзэх
+                </Link>
+              </div> */}
+            </>
           ) : (
             <p className="product-empty text-body-1">No products found</p>
           )}

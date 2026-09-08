@@ -11,7 +11,7 @@ export default function BreakSection() {
           </div>
         </div>
         <span className="br-line"></span>
-        <div className="sect-bottom">
+        {/* <div className="sect-bottom">
           <div className="container">
             <div className="box-hacker has-overlay_linear mx-1">
               <p className="hacker-text text-caption font-2 text-uppercase hackerText">
@@ -23,7 +23,7 @@ export default function BreakSection() {
               </p>
             </div>
           </div>
-        </div>
+        </div> */}
         <div className="position-relative z-5">
           <div className="container">
             <div className="has-hafl_plus">

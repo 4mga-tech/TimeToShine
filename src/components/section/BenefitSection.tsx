@@ -17,7 +17,7 @@ export default function BenefitSection() {
         <span className="br-line"></span>
         <MainBenefitSection />
         <span className="br-line"></span>
-        <SectBottom />
+        {/* <SectBottom /> */}
         <span className="br-line"></span>
       </section>
     </>

@@ -95,6 +95,29 @@
         white-space: nowrap;
         gap: 24px;
     }
+
+    @include res(md) {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 0 8px;
+        padding: 8px 0;
+        overflow-x: visible;
+        white-space: normal;
+
+        .nav-tab-item {
+            flex: 1 1 calc(50% - 8px);
+            padding: 4px 0;
+        }
+
+        .btn_tab {
+            width: 100%;
+            min-width: 0;
+            justify-content: center;
+            padding-right: 10px;
+            padding-left: 10px;
+            text-align: center;
+        }
+    }
 }
 
 

@@ -16,7 +16,7 @@ export default function PageAboutUs() {
         <BreakSection />
         <BenefitSectionV2 />
         <BreakSection />
-        <TeamSection />
+        {/* <TeamSection /> */}
         <BreakSection />
         <section className="section-testimonial tes-2 flat-spacing-3">
           <MainTestimonialSection />

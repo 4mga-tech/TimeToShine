@@ -11,7 +11,7 @@ export default function PageFaq() {
         <PageTitle name="ТҮГЭЭМЭЛ АСУУЛТУУД" />
         <FaqSectionV2 />
         <BreakSection />
-        <GetSection />
+        {/* <GetSection /> */}
       </Layout>
     </>
   );

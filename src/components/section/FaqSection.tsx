@@ -17,7 +17,7 @@ export default function FaqSection() {
         <span className="br-line"></span>
         <MainFaqSection />
         <span className="br-line"></span>
-        <SectBottom />
+        {/* <SectBottom /> */}
         <span className="br-line"></span>
       </section>
     </>
@@ -32,7 +32,7 @@ export function MainFaqSection({ showDecoration = true }: MainFaqSectionProps) {
           <div className="sect-title wow fadeInUp">
             <h2 className="s-title font-3 m-0">
               Асуулт байна уу? <br />
-              Бидэнд хариулт нь байна.
+              Бидэнд хариулт байна.
             </h2>
           </div>
           <div className="row">

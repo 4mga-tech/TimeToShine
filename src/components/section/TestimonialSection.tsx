@@ -18,7 +18,7 @@ export default function TestimonialSection() {
         <span className="br-line"></span>
         <MainTestimonialSection />
         <span className="br-line"></span>
-        <SectBottom />
+        {/* <SectBottom /> */}
         <span className="br-line"></span>
       </section>
     </>
@@ -45,7 +45,7 @@ export function MainTestimonialSection() {
           <div className="sect-title wow fadeInUp">
             <h2 className="s-title font-3 m-0">
               Бидэнд илгээсэн <br />
-              Хэрэглэгчдийн сэтгэгдэл
+              хэрэглэгчдийн сэтгэгдэл
             </h2>
           </div>
           <div className="testimonial-slide-wrap">

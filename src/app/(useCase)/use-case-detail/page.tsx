@@ -1,5 +1,12 @@
-import { redirect } from "next/navigation";
+import Layout from "@/src/components/layout/Layout";
+import StoreComingSoon from "@/src/components/service/StoreComingSoon";
+import PageTitle from "@/src/components/section/PageTitle";
 
-export default function UsecaseDetailRedirect() {
-    redirect("/use-case-detail/1");
+export default function StorePage() {
+    return (
+        <Layout>
+            <PageTitle name="ДЭЛГҮҮР" />
+            <StoreComingSoon />
+        </Layout>
+    );
 }

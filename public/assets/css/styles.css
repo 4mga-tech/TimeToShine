@@ -40,7 +40,7 @@
   --text-main: #f4f7f5a3;
   --text-2: #f4f7f5;
   --text-3: #f4f7f552;
-  --text-4: #f4f7f52e;
+  --text-4: #cad1cc;
   --bg: #eef5ff;
   --bg-2: #141415d1;
   --bg-3: #d9e7ff;
@@ -4504,7 +4504,7 @@ input[type="number"]::-webkit-outer-spin-button {
   position: relative;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 6px;
+  gap: 8px;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;

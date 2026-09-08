@@ -13,7 +13,7 @@ export default function HowToUseSection() {
         <span className="br-line"></span>
         <MainHowSection />
         <span className="br-line"></span>
-        <SectBottom />
+        {/* <SectBottom /> */}
         <span className="br-line"></span>
       </section>
     </>

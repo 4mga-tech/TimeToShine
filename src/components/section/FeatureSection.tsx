@@ -15,7 +15,7 @@ export default function FeatureSection() {
         <span className="br-line"></span>
         <MainFeatureSection />
         <span className="br-line"></span>
-        <SectBottom />
+        {/* <SectBottom /> */}
         <span className="br-line"></span>
       </section>
     </>

@@ -8,7 +8,7 @@ export default function ContactSection() {
       <section className="section-contact-us flat-spacing-3">
         <div className="container">
           <h2 className="s-title only-title ol-tt-2 font-3 text-center text-linear">
-            Бидэнтэй холбогдох
+            {/* Бидэнтэй холбогдох */}
           </h2>
           <div className="row">
             {boxIconTextProps2.map((item, idx) => (
@@ -27,14 +27,14 @@ export default function ContactSection() {
                     <p className="title text-main-2">{item.title}</p>
                     <p className="sub-title text-body-3">{item.sub_title}</p>
                   </div>
-                  <div className="d-flex">
+                  {/* <div className="d-flex">
                     <Link
                       href="#"
                       className="tf-btn text-body-3 animate-btn style-high-2"
                     >
                       Үргэлжлүүлэх
                     </Link>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             ))}

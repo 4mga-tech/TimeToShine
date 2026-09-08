@@ -65,53 +65,49 @@ export function FooterBody() {
 
 export function FooterInnerLink() {
   return (
-    <>
-      <div className="footer-inner_link tf-grid-layout tf-col-2 lg-col-4">
-        <div className="">
-          <Link href="/" className="footer-logo logo-site">
-            <Image
-              src="/assets/images/logo/logo2.png"
-              alt="LOGO"
-              width={75}
-              height={20}
-              className="lazyload"
-            />
-          </Link>
-        </div>
-
+    <div className="footer-navigation">
+      <div className="footer-navigation__left">
         <FooterColumn
-          title="Бүтээгдэхүүн"
-          className="mx-auto m-sm-0"
-          links={[
-            { label: "Онцлог", href: "#" },
-            { label: "Үр дүн", href: "#" },
-            { label: "Хэрхэн ашиглах", href: "#" },
-            { label: "Бүтээгдэхүүн", href: "#" },
-          ]}
-        />
-
-        <FooterColumn
-          title="Бодлого"
+          className="m-0"
           links={[
             { label: "Нууцлалын бодлого", href: "#" },
             { label: "Үйлчилгээний нөхцөл", href: "#" },
           ]}
         />
-
+      </div>
+      <div className="footer-brand">
+        <Link
+          href="/"
+          className="footer-logo logo-site"
+          aria-label="TST нүүр хуудас"
+        >
+          <Image
+            src="/assets/images/logo/logo2.png"
+            alt="TST"
+            width={240}
+            height={64}
+            className="lazyload"
+            priority
+          />
+        </Link>
+      </div>
+      <div className="footer-navigation__right">
         <FooterColumn
-          title="Сошиал медиа"
-          className="mx-auto m-sm-0"
+          className="m-0"
           links={[
-            { label: "Twitter (X)", href: "#" },
+            {
+              label: "Instagram",
+              href: "https://www.instagram.com/tst_llc_/",
+              target: "_blank",
+            },
             {
               label: "Facebook",
               href: "https://www.facebook.com/share/1LNnFvVguy/?mibextid=wwXIfr",
               target: "_blank",
             },
-            { label: "LinkedIn", href: "#" },
           ]}
         />
       </div>
-    </>
+    </div>
   );
 }

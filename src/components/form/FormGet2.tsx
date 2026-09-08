@@ -9,12 +9,12 @@ export default function FormGet2() {
                 className="label-text text-body-3 text-white"
                 htmlFor="first-name"
               >
-                First name
+                Овог
               </label>
               <input
                 type="text"
                 id="first-name"
-                placeholder="Amgalanbaatar"
+                placeholder="........."
                 required
               />
             </fieldset>
@@ -23,12 +23,12 @@ export default function FormGet2() {
                 className="label-text text-body-3 text-white"
                 htmlFor="last-name"
               >
-                Last name
+                Нэр
               </label>
               <input
                 type="text"
                 id="last-name"
-                placeholder="Gansukh"
+                placeholder="........."
                 required
               />
             </fieldset>
@@ -39,26 +39,21 @@ export default function FormGet2() {
                 className="label-text text-body-3 text-white"
                 htmlFor="email"
               >
-                Email
+                И-мэйл
               </label>
-              <input
-                type="text"
-                id="email"
-                placeholder="gansukhamgalanbaatarr133@gmail.com"
-                required
-              />
+              <input type="text" id="email" placeholder="........." required />
             </fieldset>
             <fieldset>
               <label
                 className="label-text text-body-3 text-white"
                 htmlFor="phone"
               >
-                Phone
+                Утас
               </label>
               <input
                 type="number"
                 id="phone"
-                placeholder="+97689808814"
+                placeholder="........."
                 required
               />
             </fieldset>
@@ -68,16 +63,16 @@ export default function FormGet2() {
               className="label-text text-body-3 text-white"
               htmlFor="message"
             >
-              Message
+              Мессеж
             </label>
-            <textarea id="message" placeholder="type smth lol"></textarea>
+            <textarea id="message"></textarea>
           </fieldset>
         </div>
         <button
           type="submit"
           className="tf-btn text-body-3 style-2 animate-btn animate-dark style-high"
         >
-          Send message
+          Илгээх
         </button>
       </form>
     </>

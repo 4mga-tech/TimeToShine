@@ -35,28 +35,29 @@ export const faqItems: faqItem[] = [
 
 export const faqItems2: faqItem[] = [
   {
-    title: "Is my data safe when using Qore?",
+    title: "TST-тэй хамтран ажиллах явц ямар байдаг вэ?",
     label:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc iaculis diam ut suscipit dapibus. Nunc sodales velit a tellus ultrices, quis scelerisque libero tempus.",
+      "Бид эхлээд таны бизнесийн хэрэгцээ, шаардлагыг сонсож, дэлгэрэнгүй судалгаа хийдэг. Дараа нь тохирох техникийн шийдэл, төслийн төлөвлөгөө, үнийн саналыг боловсруулан танд танилцуулж, зөвшилцсөний дараа хэрэгжүүлэлтийн ажлыг эхлүүлдэг.",
   },
   {
-    title: "How can I start using Qore?",
+    title: "TST-тэй хэрхэн хамтран ажиллаж эхлэх вэ?",
     label:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc iaculis diam ut suscipit dapibus. Nunc sodales velit a tellus ultrices, quis scelerisque libero tempus.",
+      'Манай вэбсайт дээрх "Демо хүсэх" товч дээр дарж холбогдох мэдээллээ илгээгээрэй, эсвэл имэйл, утсаар шууд бидэнтэй холбогдож болно. Манай баг тантай холбогдож, эхний үнэ төлбөргүй зөвлөгөө өгөх уулзалтыг товлоно.',
   },
   {
-    title: "What are the risks of using Qore?",
+    title: "Таны мэдээлэл, эх код TST-д хэр аюулгүй хадгалагддаг вэ?",
     label:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc iaculis diam ut suscipit dapibus. Nunc sodales velit a tellus ultrices, quis scelerisque libero tempus.",
+      "Бид харилцагчийн мэдээлэл, эх код, бизнесийн нууц мэдээллийг нууцлалын гэрээгээр баталгаажуулан, олон улсын стандартад нийцсэн аюулгүй байдлын протоколоор хамгаалдаг. Танай зөвшөөрөлгүйгээр аливаа мэдээллийг гуравдагч этгээдэд дамжуулдаггүй.",
   },
   {
-    title: "Can I trust the answers from an Qore?",
+    title: "TST-ийн хэрэгжүүлсэн шийдэлд найдаж болох уу?",
     label:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc iaculis diam ut suscipit dapibus. Nunc sodales velit a tellus ultrices, quis scelerisque libero tempus.",
+      "Тийм ээ. Манай мэргэжлийн инженер, хөгжүүлэгчдийн баг олон жилийн туршлагатай бөгөөд төсөл бүрийг олон шатны тестлэлт, чанарын хяналтаар нэгжсэний дараа хүлээлгэн өгдөг. Мөн бид хэрэгжсэн шийдлүүддээ баталгаа, дараах дэмжлэгийг үзүүлдэг.",
   },
   {
-    title: "Does AI need an internet connection to work?",
+    title:
+      "Хэрэгжүүлсэн систем ажиллахын тулд тасралтгүй интернэт холболт шаардлагатай юу?",
     label:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc iaculis diam ut suscipit dapibus. Nunc sodales velit a tellus ultrices, quis scelerisque libero tempus.",
+      "Энэ нь таны сонгосон шийдлийн төрлөөс хамаарна. Зарим систем (жишээ нь: cloud суурьтай платформ) байнгын интернэт холболт шаарддаг бол, зарим дэд бүтцийн шийдлийг офлайн орчинд ч ажиллах боломжтойгоор боловсруулж болно. Бид таны орчин, хэрэгцээнд тохирсон хамгийн тохиромжтой хувилбарыг санал болгодог.",
   },
 ];
