@@ -18,12 +18,11 @@ export default function GetSection() {
                 <li>
                   <p className="title-sub text-body-3">Оффис</p>
                   <a
-                    href="https://maps.app.goo.gl/wVVNQTjnvrceh4sw9"
+                    href="https://maps.app.goo.gl/ivQMaJJgJG6skJKH7"
                     target="_blank"
                     className="text-body-3 link text-white"
                   >
-                    Монгол улс, Улаанбаатар хот, Баянгол, 1-р хороо, МҮИС 9
-                    давхар, 919 тоот
+                    СБД, 9-р хороо, Хоймор оффис, 3 давхар, 305 тоот
                   </a>
                 </li>
                 <li className="br-line has-dot"></li>

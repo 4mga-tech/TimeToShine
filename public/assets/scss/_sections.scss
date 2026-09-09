@@ -1410,7 +1410,7 @@
   position: relative;
   gap: 8px;
   @include transition3;
-  height: clamp(40px, 5.3vw, 68px);
+  min-height: clamp(84px, 10.6vw, 136px);
   width: 100%;
 }
 

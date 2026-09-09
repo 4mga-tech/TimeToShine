@@ -6,37 +6,37 @@ export interface BoxIconTextProp {
 
 export const boxIconTextProps: BoxIconTextProp[] = [
   {
-    image_icon: "platform.svg",
+    image_icon: "solution.svg",
     title: "Цогц IT шийдэл",
     sub_title:
       "Хэд хэдэн байгууллагатай харилцах шаардлагагүй. TST веб, мобайл, дизайн, дэд бүтэц зэрэг бүх IT хэрэгцээг нэг дороос шийддэг.",
   },
   {
-    image_icon: "ai-core.svg",
+    image_icon: "team.svg",
     title: "Мэргэжлийн баг, туршлагатай инженерүүд",
     sub_title:
       "Төрөл бүрийн технологи, платформ дээр ажилласан туршлагатай хөгжүүлэгчид таны төслийг хамгийн тохиромжтой шийдлээр хэрэгжүүлдэг.",
   },
   {
-    image_icon: "control.svg",
+    image_icon: "solution2.svg",
     title: "Таны хэрэгцээнд тохирсон шийдэл",
     sub_title:
       "Бид загвар шийдэл биш, таны бизнесийн онцлогт тулгуурласан, тусгайлан боловсруулсан шийдлийг санал болгодог.",
   },
   {
-    image_icon: "speed.svg",
+    image_icon: "speed2.svg",
     title: "Цаг хугацаанд нийцсэн хурд",
     sub_title:
       "Жижиг эсвэл том төсөл, ганц хүн эсвэл баг — TST хугацаандаа, чанартай үр дүнг хүргэдэг.",
   },
   {
-    image_icon: "secure.svg",
+    image_icon: "security.svg",
     title: "Аюулгүй байдал эхний ээлжинд",
     sub_title:
       "Таны мэдээлэл, эх код бүрэн нууцлагдсан хэвээр байна. Бид мэдрэмтгий өгөгдлийг хадгалдаггүй.",
   },
   {
-    image_icon: "evolving.svg",
+    image_icon: "progress.svg",
     title: "Байнга хөгжиж буй технологи",
     sub_title:
       "Бид шинэ технологи, хэрэгслүүдийг тогтмол судалж, туршлагаа сайжруулан, таны төслүүдэд хамгийн сүүлийн үеийн шийдлийг санал болгодог.",
@@ -45,19 +45,19 @@ export const boxIconTextProps: BoxIconTextProp[] = [
 
 export const boxIconTextProps2: BoxIconTextProp[] = [
   {
-    image_icon: "setting.svg",
+    image_icon: "setting1.svg",
     title: "Демо хүсэх",
     sub_title:
       "Манай багтай холбогдож, TST-ийн шийдлүүдийг өөрийн бизнест хэрхэн тохируулан ашиглахыг үнэ төлбөргүй танилцуулга үзээрэй.",
   },
   {
-    image_icon: "support.svg",
+    image_icon: "support1.svg",
     title: "Онлайн дэмжлэг",
     sub_title:
       "Тусламж хэрэгтэй байна уу? Манай дэмжлэгийн баг 24/7 цагийн турш танд хариу өгөхөд бэлэн байна.",
   },
   {
-    image_icon: "partner.svg",
+    image_icon: "partner1.svg",
     title: "Хамтын ажиллагаа",
     sub_title:
       "Бизнесийн түнш болох, хамтарсан төсөл хэрэгжүүлэх боломжийн талаар манай багтай холбогдоорой.",

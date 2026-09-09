@@ -176,13 +176,13 @@ function ProductModal({
           <p>{product.description}</p>
           <p>{product.details}</p>
           <div className="br-line has-dot"></div>
-          <h5 className="font-3">Key features</h5>
+          <h5 className="font-3">Гол онцлогууд</h5>
           <ul className="product-features">
             {product.features.map((feature) => (
               <li key={feature}>{feature}</li>
             ))}
           </ul>
-          <h5 className="font-3">Specifications</h5>
+          <h5 className="font-3">Үзүүлэлтүүд</h5>
           <dl className="product-specifications">
             {product.specifications.map((specification) => (
               <div key={specification.label}>

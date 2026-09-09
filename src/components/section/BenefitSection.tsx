@@ -45,7 +45,7 @@ export function MainBenefitSection() {
               </div>
             </div>
             <div className="sect-title wow fadeInUp">
-              <h2 className="s-title font-3">Яагаад биднийг сонгох вэ?</h2>
+              <h2 className="s-title font-3">Бидний үйл ажиллагааны чиглэл</h2>
               <p className="s-sub_title">
                 Мэдээллийн технологи, инженерийн дэвшилтэт шийдлийг нэг дороос
                 хүргэх зорилготойгоор <br />

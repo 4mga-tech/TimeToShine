@@ -8,7 +8,7 @@ export default function ContactSection() {
       <section className="section-contact-us flat-spacing-3">
         <div className="container">
           <h2 className="s-title only-title ol-tt-2 font-3 text-center text-linear">
-            {/* Бидэнтэй холбогдох */}
+            Бидэнтэй холбогдох
           </h2>
           <div className="row">
             {boxIconTextProps2.map((item, idx) => (

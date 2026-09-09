@@ -12,20 +12,20 @@ export const stepItems: stepItem[] = [
     number: "01",
     title: "ОРЧИН ҮЕИЙН",
     desc: "Уян хатан, найдвартай технологийн шийдэл",
-    image: "step-1.webp",
+    image: "modern.svg",
   },
   {
     id: "step2",
     number: "02",
     title: "ТАСРАЛТГҮЙ",
     desc: "Үйлчлүүлэгч бүрд зориулсан тогтмол сайжруулалт",
-    image: "step-2.webp",
+    image: "infinity.svg",
   },
   {
     id: "step3",
     number: "03",
     title: "ҮР АШИГТАЙ",
     desc: "Бүтээмжийг дэмжих шинэлэг системүүд",
-    image: "step-3.webp",
+    image: "profit.svg",
   },
 ];

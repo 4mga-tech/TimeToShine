@@ -202,11 +202,14 @@ th {
 }
 
 .container {
-  max-width: 2656px;
+  max-width: 1440px;
   width: 100%;
   margin: auto;
   padding-left: 16px;
   padding-right: 16px;
+
+  @include res(md, min) { padding-left: 24px; padding-right: 24px; }
+  @include res(xl, min) { padding-left: 32px; padding-right: 32px; }
 }
 
 .container-full {
@@ -222,7 +225,7 @@ th {
 }
 
 .container-layout-right {
-  width: calc(100vw - ((100vw - 1548px) / 2) - 4px);
+  width: min(100%, calc(100% - max(16px, (100% - 1440px) / 2)));
   margin-right: unset;
   max-width: 100%;
   margin-left: auto;
@@ -1139,7 +1142,7 @@ a {
 }
 
 .content-1200 {
-  max-width: 2464px;
+    max-width: 1320px;
   width: 100%;
   margin: auto;
   padding-left: 16px;

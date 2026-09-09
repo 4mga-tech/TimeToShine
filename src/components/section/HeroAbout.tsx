@@ -31,34 +31,24 @@ export default function HeroAbout() {
                   Танай итгэлт түнш <br />
                   “Ти Эс Ти таусэнт технологи” ХХК
                 </h2>
-                <p className="s-sub_title">
+                {/* <p className="s-sub_title">
                   Мэдээллийн технологи, инженерийн найдвартай шийдлийг таны
                   хэрэгцээнд нийцүүлэн хүргэнэ.
-                </p>
+                </p> */}
               </div>
               <div className="image px-16 px-lg-0">
                 <Image
                   loading="lazy"
                   width={1078}
                   height={606}
-                  src="/assets/images/section/hero-about.png"
+                  src="/assets/images/item/kk.jpg"
                   alt="Image"
                 />
               </div>
             </div>
             <div className="col-lg-4 offset-lg-1">
               <div className="px-16 px-lg-0">
-                {/* <p className="text-caption caption font-2 text-main-2">
-                  ABOUT QORE
-                </p> */}
                 <div className="rate-per">
-                  <Image
-                    loading="lazy"
-                    width={90}
-                    height={16}
-                    src="/assets/images/item/star-rate.png"
-                    alt="Image"
-                  />
                   <p className="text-main-3">
                     <span className="fw-bold text-main-5">(4.9/</span>.5.0)
                   </p>
@@ -100,11 +90,10 @@ export default function HeroAbout() {
             </div>
             <div className="col-lg-5 offset-lg-1">
               <ScrollColorText className="h4 font-3 px-16 px-lg-0 hero-about__statement">
-                Хувь хүн болон аж ахуйн нэгж, албан байгууллагын үйл ажиллагааны
-                хэрэгцээ шаардлагад нийцсэн программ хангамж, тоног төхөөрөмжийн
-                нийлүүлэлт, угсралт, суурилуулалт, тохиргоо, техникийн дэмжлэг,
-                засвар үйлчилгээ болон системийн шийдлийг цогцоор нь хүргэн
-                ажилладаг.
+                Хувь хүн болон, албан байгууллагын үйл ажиллагааны хэрэгцээ
+                шаардлагад нийцсэн программ хангамж, тоног төхөөрөмжийн
+                нийлүүлэлт, угсралт, суурилуулалт, тохиргоо, засвар үйлчилгээ
+                болон системийн шийдлийг цогцоор нь хүргэн ажилладаг.
               </ScrollColorText>
             </div>
           </div>
