@@ -23,7 +23,7 @@ export const products: Product[] = [
     name: "Hikvision 2MP Дом Камер",
     category: "Дом камерууд",
     image: "/assets/images/blog/hikvision.jpg",
-    price: "200000₮",
+    price: "200,000₮",
     description:
       "Найдвартай Full HD дүрс бүхий, дотор орчинд зориулсан компакт дом камер.",
     details:
@@ -46,7 +46,7 @@ export const products: Product[] = [
     name: "Hikvision 4MP Пуужин хэлбэрийн камер",
     category: "Пуужин хэлбэрийн камерууд",
     image: "/assets/images/blog/hikvision2.jpg",
-    price: "250000₮",
+    price: "250,000₮",
     description:
       "Гадна орчинд зориулсан, 4MP тодорхой дүрс бүхий цаг агаарт тэсвэртэй камер.",
     details:
@@ -69,7 +69,7 @@ export const products: Product[] = [
     name: "Hikvision 5MP ColorVu Камер",
     category: "Өнгөт шөнийн дүрс",
     image: "/assets/images/blog/hikvision3.jpg",
-    price: "300000₮",
+    price: "300,000₮",
     description:
       "Бага гэрэлтэй орчинд тод, өнгөт дүрс өгдөг, хилийн хамгаалалтад зориулсан камер.",
     details:
@@ -92,7 +92,7 @@ export const products: Product[] = [
     name: "Dahua 2MP Дом Камер",
     category: "Дом камерууд",
     image: "/assets/images/blog/hikvision4.jpg",
-    price: "200000₮",
+    price: "200,000₮",
     description:
       "Дотор орчинд тодорхой хяналт хийхэд зориулсан, найдвартай 1080p дом камер.",
     details:
@@ -115,7 +115,7 @@ export const products: Product[] = [
     name: "Dahua 4MP Пуужин хэлбэрийн камер",
     category: "Пуужин хэлбэрийн камерууд",
     image: "/assets/images/blog/hikvision5.jpg",
-    price: "320000₮",
+    price: "320,000₮",
     description:
       "Ухаалаг мэдэгдэл бүхий, өндөр нарийвчлалтай гадна орчны камер.",
     details:
@@ -138,7 +138,7 @@ export const products: Product[] = [
     name: "Dahua PTZ Камер",
     category: "PTZ камерууд",
     image: "/assets/images/blog/hikvision5.jpg",
-    price: "299000₮",
+    price: "299,000₮",
     description:
       "Том, идэвхтэй талбайд зориулсан эргэх, налах, томруулах моторт хяналт.",
     details:
@@ -179,7 +179,7 @@ export const products: Product[] = [
     name: "Dahua 5MP Шөнийн дүрсний камер",
     category: "Шөнийн дүрс",
     image: "/assets/images/blog/hikvision3.jpg",
-    price: "350000₮",
+    price: "350,000₮",
     description: "Шөнийн цагт хол зайнаас хянах чадвартай 5MP камер.",
     details:
       "Аж үйлдвэр болон орон сууцны бага гэрэлтэй орчинд дүрсний нарийвчлалыг хадгалахад зориулагдсан найдвартай шийдэл.",
@@ -201,7 +201,7 @@ export const products: Product[] = [
     name: "Hikvision WiFi Камер",
     category: "Утасгүй камерууд",
     image: "/assets/images/blog/hikvision2.jpg",
-    price: "269000₮",
+    price: "269,000₮",
     description:
       "Гэр болон жижиг оффист хялбар суурилуулах уян хатан утасгүй хяналтын камер.",
     details:
@@ -224,7 +224,7 @@ export const products: Product[] = [
     name: "Гадна орчны хамгаалалтын камер",
     category: "Гадна орчны камерууд",
     image: "/assets/images/blog/hikvision.jpg",
-    price: "279000₮",
+    price: "279,000₮",
     description:
       "Аливаа цаг агаарт тохиромжтой, өдөр шөнөгүй хамгаалалт хийдэг камер.",
     details:
