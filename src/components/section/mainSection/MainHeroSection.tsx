@@ -1,6 +1,12 @@
 "use client";
 import { assitantsAiItems } from "@/src/data/assitantsAi";
 import { useEffect, useState } from "react";
+import { Patua_One } from "next/font/google";
+
+const patuaOne = Patua_One({
+  subsets: ["latin"],
+  weight: "400",
+});
 
 export function MainHeroSection() {
   const [index, setIndex] = useState(0);
@@ -19,25 +25,34 @@ export function MainHeroSection() {
         <div className="container">
           <div className="sect-title wow fadeInUp">
             <h1 className="s-title font-3">
-              {/* Ти Эс Ти таусэнт технологи <br /> */}
-              <div className="text-change_wrap interactive-title" onMouseMove={(event) => { const rect = event.currentTarget.getBoundingClientRect(); setTilt({ x: ((event.clientX - rect.left) / rect.width - .5) * 8, y: ((event.clientY - rect.top) / rect.height - .5) * 6 }); }} onMouseLeave={() => setTilt({ x: 0, y: 0 })}>
+              <div
+                className="text-change_wrap interactive-title"
+                onMouseMove={(event) => {
+                  const rect = event.currentTarget.getBoundingClientRect();
+                  setTilt({
+                    x: ((event.clientX - rect.left) / rect.width - 0.5) * 8,
+                    y: ((event.clientY - rect.top) / rect.height - 0.5) * 6,
+                  });
+                }}
+                onMouseLeave={() => setTilt({ x: 0, y: 0 })}
+              >
                 {assitantsAiItems.map((item, idx) => (
                   <div
                     key={idx}
-                    className={`text-change_rotating  ${idx === index ? "active" : ""}`}
-                    style={{ transform: `translate3d(${tilt.x}px, ${tilt.y}px, 0) rotateX(${-tilt.y * .35}deg) rotateY(${tilt.x * .35}deg)` }}
+                    className={`text-change_rotating ${patuaOne.className} ${idx === index ? "active" : ""}`}
+                    style={{
+                      transform: `translate3d(${tilt.x}px, ${tilt.y}px, 0) rotateX(${-tilt.y * 0.35}deg) rotateY(${tilt.x * 0.35}deg)`,
+                      fontSize: "clamp(78px, 8vw, 130px)",
+                      lineHeight: "1.05",
+                      textShadow: "0 0 60px rgba(120, 170, 255, 0.35)",
+                      color: "#F4F7F5",
+                    }}
                   >
-                    {/* Технологи | Шийдэл | Итгэлцэл */}
-                    Ти Эс Ти таусэнт <br /> технологи
+                    TST LLC
                   </div>
                 ))}
               </div>
             </h1>
-            {/* <p className="s-sub_title">
-              “Ти Эс Ти таусэнт технологи” ХХК нь мэдээлэл технологийн
-              инженерчлэл, хамгийн чанартай мэдээлэл <br /> технологийн
-              мэргэжлийн үйлчилгээ үзүүлэх зорилготойгоор байгуулагдсан.
-            </p> */}
           </div>
         </div>
         <span className="br-line"></span>
@@ -55,9 +70,6 @@ export function BoxAskWrap() {
   return (
     <>
       <div className="box-ask-wrap">
-        {/* <div className="box-ask">
-                    <AskForm />
-                </div> */}
         <span className="hafl-plus pst-left_bot item_bot wow bounceInScale"></span>
         <span className="hafl-plus pst-right_bot item_bot wow bounceInScale"></span>
         <span className="hafl-plus pst-left_top item_top wow bounceInScale"></span>

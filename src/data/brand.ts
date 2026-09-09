@@ -6,50 +6,50 @@ export interface brandItem {
 export const brandItems: brandItem[] = [
   {
     image: "/assets/images/brand/brand_1.png",
-    width: 132,
+    width: 100,
   },
   {
     image: "/assets/images/brand/brand_2.png",
-    width: 122,
+    width: 100,
   },
   {
     image: "/assets/images/brand/brand_3.png",
-    width: 70,
+    width: 100,
   },
   {
     image: "/assets/images/brand/brand_2.png",
-    width: 105,
+    width: 100,
   },
   {
     image: "/assets/images/brand/brand_3.png",
-    width: 70,
+    width: 100,
   },
   {
     image: "/assets/images/brand/brand_3.png",
-    width: 70,
+    width: 100,
   },
   {
     image: "/assets/images/brand/brand_2.png",
-    width: 132,
+    width: 100,
   },
   {
     image: "/assets/images/brand/brand_1.png",
-    width: 122,
+    width: 100,
   },
   {
     image: "/assets/images/brand/brand_2.png",
-    width: 125,
+    width: 100,
   },
   {
     image: "/assets/images/brand/brand_1.png",
-    width: 105,
+    width: 100,
   },
   {
     image: "/assets/images/brand/brand_2.png",
-    width: 62,
+    width: 100,
   },
   {
     image: "/assets/images/brand/brand_1.png",
-    width: 112,
+    width: 100,
   },
 ];

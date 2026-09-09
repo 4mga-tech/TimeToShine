@@ -23,6 +23,7 @@ export default function NavMobileV2({
               height={20}
               src="/assets/images/logo/logo2.png"
               alt="LOGO"
+              style={{ width: "auto", height: "auto" }}
             />
           </div>
           <div className="btn_group">

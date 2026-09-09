@@ -27,10 +27,11 @@ export default function HeaderV2() {
               <div className="header-left">
                 <Link href="/" className="logo-site">
                   <Image
-                    width={75}
-                    height={20}
+                    width={50}
+                    height={10}
                     src="/assets/images/logo/logo2.png"
                     alt="LOGO"
+                    style={{ width: "auto", height: "auto" }}
                   />
                 </Link>
               </div>

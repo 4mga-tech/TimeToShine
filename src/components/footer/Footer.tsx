@@ -84,6 +84,7 @@ export function FooterInnerLink() {
           <Image
             src="/assets/images/logo/logo2.png"
             alt="TST"
+            style={{ width: "auto", height: "auto" }}
             width={240}
             height={64}
             className="lazyload"

@@ -1,5 +1,11 @@
 import Image from "next/image";
 import ScrollColorText from "../common/ScrollColorText";
+import { Patua_One } from "next/font/google";
+
+const patuaOne = Patua_One({
+  subsets: ["latin"],
+  weight: "400",
+});
 
 export default function HeroAbout() {
   return (
@@ -27,10 +33,18 @@ export default function HeroAbout() {
           <div className="row">
             <div className="col-lg-10 mx-auto">
               <div className="sect-title hero-about__intro wow fadeInUp">
-                <h2 className="s-title font-3">
-                  Танай итгэлт түнш <br />
-                  “Ти Эс Ти таусэнт технологи” ХХК
-                </h2>
+                <h1
+                  className={`s-title font-3 ${patuaOne.className}`}
+                  style={{
+                    fontSize: "clamp(48px, 6vw, 96px)",
+                    lineHeight: "1.05",
+                    textShadow: "0 0 60px rgba(120, 170, 255, 0.35)",
+                    color: "#F4F7F5",
+                  }}
+                >
+                  {/* Танай итгэлт түнш <br /> */}
+                  TST LLC
+                </h1>
                 {/* <p className="s-sub_title">
                   Мэдээллийн технологи, инженерийн найдвартай шийдлийг таны
                   хэрэгцээнд нийцүүлэн хүргэнэ.

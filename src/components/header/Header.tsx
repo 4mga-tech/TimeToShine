@@ -47,10 +47,11 @@ export function HeaderLeft() {
       <div className="header-left">
         <Link href="/" className="logo-site">
           <Image
-            width={15}
-            height={15}
+            width={10}
+            height={10}
             src="/assets/images/logo/logo2.png"
             alt="LOGO"
+            style={{ width: "auto", height: "auto" }}
           />
         </Link>
       </div>
@@ -129,6 +130,7 @@ export function MobileMenu({
               height={30}
               src="/assets/images/logo/logo2.png"
               alt="LOGO"
+              style={{ width: "auto", height: "auto" }}
             />
           </div>
           <div className="btn_group">

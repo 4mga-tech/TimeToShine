@@ -166,9 +166,11 @@ function ProductModal({
           />
         </div>
         <div className="product-modal__content">
-          <p className="product-card__category text-body-3">
-            {product.category}
-          </p>
+          <div className="product-modal__category-row">
+            <span className="product-card__category text-body-3">
+              {product.category}
+            </span>
+          </div>
           <h2 id="product-modal-title" className="font-3 h3 text-linear">
             {product.name}
           </h2>
